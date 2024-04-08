@@ -87,7 +87,7 @@ public class GameController : MonoBehaviour
         }
 
         // Zera a pontuação do registro e retorna ao menu principal
-        resetScore();
+        resetScore(true);
         SceneManager.LoadScene(0);
     }
 
@@ -102,7 +102,7 @@ public class GameController : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
 
-        Debug.Log("Next Level!");
+        nextLevel();
     }
 
     // Se apertar ESC, retorna ao menu principal
@@ -110,7 +110,7 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            resetScore();
+            resetScore(true);
             SceneManager.LoadScene(0);
         }
     }
@@ -178,12 +178,17 @@ public class GameController : MonoBehaviour
         }
     }
 
-    // Zera as pontuações de coins, ghosts e lifes do registro
-    public void resetScore()
+    // Zera as pontuações de coins, ghosts e lifes do registro. Recebe um valor booleano se é Game Over ou não
+    public void resetScore(bool isGameOver)
     {
         PlayerPrefs.DeleteKey("coins");
         PlayerPrefs.DeleteKey("ghosts");
-        PlayerPrefs.DeleteKey("lifes");
+
+        // Se for Game Over, zera a pontuação de lifes também
+        if (isGameOver)
+        {
+            PlayerPrefs.DeleteKey("lifes");
+        }
     }
 
     // Reinicia o cenário
@@ -211,5 +216,20 @@ public class GameController : MonoBehaviour
 
         StartCoroutine(secondsFinish());
         secondsFinish();
+    }
+    
+    // Se tiver mais cenas a seguir, passa para o próximo nível, senão retorna ao menu principal
+    public void nextLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings - 1)
+        {
+            resetScore(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            resetScore(true);
+            SceneManager.LoadScene(0);
+        }
     }
 }

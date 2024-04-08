@@ -180,7 +180,6 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
 
             GameController.instance.removeAllObjects();
-            GameController.instance.resetScore();
             GameController.instance.finishScreen();
         }
     }
@@ -218,7 +217,7 @@ public class Player : MonoBehaviour
                     GameController.instance.removeAllObjects();
                     GameController.instance.updateScoreTextGameOver();
                     GameController.instance.gameOverScreen();
-                    GameController.instance.resetScore();
+                    GameController.instance.resetScore(true);
                 }
 
                 Destroy(gameObject, 1f);
@@ -248,7 +247,7 @@ public class Player : MonoBehaviour
                     GameController.instance.removeAllObjects();
                     GameController.instance.updateScoreTextGameOver();
                     GameController.instance.gameOverScreen();
-                    GameController.instance.resetScore();
+                    GameController.instance.resetScore(true);
                 }
 
                 Destroy(gameObject, 1f);
