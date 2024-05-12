@@ -131,6 +131,8 @@ MonoBehaviour:
   JumpForce: 13
   DoubleJumpForce: 6
   projectile: {fileID: 5831182922825189525, guid: 448892e94ded51747bb7a25637657561, type: 3}
+  shotSound: {fileID: 8300000, guid: 2fdc43fb643bad7419fdbcc246b46e41, type: 3}
+  deathSound: {fileID: 8300000, guid: ac56d0da3a68f1643a48650061203428, type: 3}
 --- !u!95 &3364702252166311794
 Animator:
   serializedVersion: 5

@@ -201,6 +201,7 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 192
+  ghostDeath_sound: {fileID: 8300000, guid: 3e3556d10d393d24c94fe20ea5f4db84, type: 3}
 --- !u!1 &4641745374734649647
 GameObject:
   m_ObjectHideFlags: 0

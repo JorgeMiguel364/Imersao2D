@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutorial
+  m_text: Como jogar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
   m_sharedMaterial: {fileID: -3131728064941021695, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.95
+  m_fontSize: 30.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3978,6 +3978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de35d825c0a7fe6458842f7a6ec0c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
 --- !u!1 &256223069
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,7 +5256,7 @@ GameObject:
   - component: {fileID: 790204354}
   - component: {fileID: 790204353}
   m_Layer: 5
-  m_Name: TutorialButton
+  m_Name: ComoJogarButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5308,8 +5310,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 1598740408, guid: 984220d152b61274fb2ccdc0bd7d6a4d, type: 3}
-    m_PressedSprite: {fileID: -309947936, guid: 984220d152b61274fb2ccdc0bd7d6a4d, type: 3}
+    m_HighlightedSprite: {fileID: -1556422279, guid: 18bb02ac7ff7cff45a1a4c97fd72c517, type: 3}
+    m_PressedSprite: {fileID: -1849545084, guid: 18bb02ac7ff7cff45a1a4c97fd72c517, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -5367,7 +5369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 865087132, guid: 984220d152b61274fb2ccdc0bd7d6a4d, type: 3}
+  m_Sprite: {fileID: -993183592, guid: 18bb02ac7ff7cff45a1a4c97fd72c517, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9054,6 +9056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de35d825c0a7fe6458842f7a6ec0c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
 --- !u!1 &1251472947
 GameObject:
   m_ObjectHideFlags: 0
@@ -9102,6 +9106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de35d825c0a7fe6458842f7a6ec0c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
 --- !u!1 &1262116070
 GameObject:
   m_ObjectHideFlags: 0
@@ -13529,7 +13535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jose Willian
+  m_text: "Jos\xE9 Willian"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
   m_sharedMaterial: {fileID: -3131728064941021695, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
@@ -16135,7 +16141,7 @@ GameObject:
   - component: {fileID: 1608626536}
   - component: {fileID: 1608626537}
   m_Layer: 0
-  m_Name: Tutorial2
+  m_Name: ComoJogar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16173,6 +16179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de35d825c0a7fe6458842f7a6ec0c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
 --- !u!1 &1628400420
 GameObject:
   m_ObjectHideFlags: 0
@@ -16500,8 +16508,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Sua miss\xE3o \xE9 coletar moedas e eliminar inimigos.\nCada n\xEDvel
     tem um valor predeterminado de moedas a se coletar e de inimigos a se eliminar.\n\nOs
-    controles s\xE3o os seguintes:\n\nMovimento: Teclas direcionais (ou as teclas
-    A e D)\nPular: Espa\xE7o\nCorrer: Shift\nAtirar: E\nPulo duplo: Espa\xE7o 2X"
+    controles s\xE3o os seguintes:\n\nMovimento: Teclas direcionais (\u2190\u2192)
+    ou as teclas A e D\nPular: Teclas direcionais (\u2191) ou a tecla W\nCorrer:
+    Shift\nAtirar: Espa\xE7o ou mouse\nPulo duplo: Teclas direcionais (\u2191) 2X"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
   m_sharedMaterial: {fileID: -3131728064941021695, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
@@ -16635,11 +16644,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "As moedas e os inimigos nascem aleatoriamente no cen\xE1rio.\n\nO jogador
-    tem no total 5 vidas. Caso haja colis\xE3o com algum inimigo ou um espinho -1
-    vida \xE9 subtra\xEDda de seu placar.\n\nSe o placar de vidas zerar, \xE9 fim
-    de jogo.\n\nSe bater o placar de moedas e de inimigos, voc\xEA avan\xE7a para
-    o pr\xF3ximo n\xEDvel."
+  m_text: "As moedas e os inimigos nascem aleatoriamente no cen\xE1rio.\n\nSe o jogador
+    ou inimigo cair no limite inferior do cen\xE1rio, o mesmo renascer\xE1 na parte
+    superior.\n\nO jogador tem no total 5 vidas. Caso haja colis\xE3o com algum inimigo
+    ou um espinho, 1 vida \xE9 subtra\xEDda de seu placar.\nSe o placar de vidas
+    zerar, \xE9 fim de jogo.\nSe bater o placar de moedas e de inimigos, voc\xEA
+    avan\xE7a para o pr\xF3ximo n\xEDvel."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
   m_sharedMaterial: {fileID: -3131728064941021695, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
@@ -17233,7 +17243,7 @@ GameObject:
   - component: {fileID: 1962941748}
   - component: {fileID: 1962941749}
   m_Layer: 0
-  m_Name: Tutorial1
+  m_Name: ComoJogar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17270,6 +17280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de35d825c0a7fe6458842f7a6ec0c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
 --- !u!1 &1963706560
 GameObject:
   m_ObjectHideFlags: 0
@@ -17455,6 +17467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de35d825c0a7fe6458842f7a6ec0c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverSound: {fileID: 8300000, guid: 9a47e6ed688476547b20b2de2c752280, type: 3}
+  clickSound: {fileID: 8300000, guid: 792dd01728432c6468233596a81f6fbb, type: 3}
 --- !u!1 &1994314726
 GameObject:
   m_ObjectHideFlags: 0
@@ -17512,7 +17526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutorial
+  m_text: Como jogar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
   m_sharedMaterial: {fileID: -3131728064941021695, guid: 5609b41b00355ed409df49ae2a0cbbbb, type: 2}
@@ -17539,7 +17553,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.95
+  m_fontSize: 30.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

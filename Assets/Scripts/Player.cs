@@ -165,7 +165,7 @@ public class Player : MonoBehaviour
         if (delayShot > 0f)
             delayShot -= Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.E) && delayShot <= 0)
+        if (Input.GetButtonDown("Fire1") && delayShot <= 0)
         {
             Instantiate(projectile, transform.position, transform.rotation);
             delayShot = .5f;

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 034a61fa6aa91cc40a2e3f0578d11796
+guid: 18bb02ac7ff7cff45a1a4c97fd72c517
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spawn-area_0
+      name: 128x32-botao-como-jogar_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
+        y: 64
+        width: 128
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,8 +137,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 622483688e77b8b428079976baa393c0
-      internalID: 843523831
+      spriteID: 362f9f950d36cb84aa5f74b155304dc4
+      internalID: -993183592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 128x32-botao-como-jogar_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2748fece44af7cf4792dca2f4d88dfe3
+      internalID: -1556422279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 128x32-botao-como-jogar_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd54cc3ef6c958948b6349117d807725
+      internalID: -1849545084
       vertices: []
       indices: 
       edges: []
@@ -154,7 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spawn-area_0: 843523831
+      128x32-botao-como-jogar_0: -993183592
+      128x32-botao-como-jogar_1: -1556422279
+      128x32-botao-como-jogar_2: -1849545084
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

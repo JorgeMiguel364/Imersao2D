@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collected: {fileID: 1637356807907416251}
+  coinCollected_sound: {fileID: 8300000, guid: c24270a6de5e34a41bdbdf4ed7339d4f, type: 3}
 --- !u!1001 &8794686731602336199
 PrefabInstance:
   m_ObjectHideFlags: 0
